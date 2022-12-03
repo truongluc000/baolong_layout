@@ -1,0 +1,53 @@
+/* Define standard variables and values for website */
+$bgcolor: rgb(253,250,239);
+$textcolor: darkblue;
+$fontsize: 18px;
+$fontfamily: 'Roboto', sans-serif;
+$defaultmargin: 0;
+$defaultpadding: 0;
+
+@for $i from 1 through 12{
+  $width: percentage(1/12*$i);
+  .col_#{$i}{
+    width: $width;
+  }
+}
+/* Use the variables */
+body{
+  background-color: $bgcolor;
+  margin: $defaultmargin;
+  padding: $defaultpadding;
+  font-family: $fontfamily;
+}
+header{
+  height: 160px;
+  .top_head{
+    background-color: #121212;
+    .top_head_img{
+      height: 51px;
+      margin: 0 auto;
+      width: 40vw;
+      .img{
+        height: 100%;
+      }
+    }
+  }
+  .head{
+    margin: 0 auto;
+    height: 114px;
+    .head_content{
+      padding: 20px 0;
+      display: flex;
+      .head_group{
+
+      }
+      .head_cart{
+        width: 80px;
+      }
+    }
+  }
+}
+.nav{
+  background-color: #ffffff;
+  height: 60px;
+}
