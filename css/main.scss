@@ -38,8 +38,79 @@ header{
     .head_content{
       padding: 20px 0;
       display: flex;
+      justify-content: space-between;
+      .logo{
+        width: 150px;
+      }
       .head_group{
-
+        .group_top{
+          display: flex;
+          justify-content: space-evenly;
+          .group_search{
+            width: 320px;
+            .search_box{
+              position: relative;
+            .search{
+              input{
+                width: 100%;
+                border-radius: 500px;
+                color: #CACACA;
+                margin: 0 20px 0 0;
+                padding: 0 0 0 20px;
+                border: 0;
+                font-size: 16px;
+                height: 35px;
+                box-shadow: 1px 2px #e9e8e8;}
+            }
+              .search_icon{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background: #e33226;
+                border: 0;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 0;
+                right: -20px;
+                bottom: 0;
+                i{
+                  font-size: 25px;
+                  padding: 5px 7px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .hot_line{
+            display: flex;
+            justify-content: flex-start;
+            padding: 4px 8px;
+            width: 180px;
+            background: #e33226;
+            border-radius: 10px;
+            color: #fff;
+            .icon{
+              margin-right: 10px;
+              padding-left: 5px;
+              i{
+                font-size: 30px;
+                -ms-transform: rotate(-40deg); /* IE 9 */
+                transform: rotate(-40deg);
+              }
+            }
+            .text{
+              font-size: 13px;
+              span{
+                font-size: 18px;
+              }
+            }
+          }
+          .build_pc{
+            width: 160px;
+            height: 30px;
+          }
+        }
       }
       .head_cart{
         width: 80px;
